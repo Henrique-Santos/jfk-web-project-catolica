@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JFK | Informação de Pagamento</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="travel-body">
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Navegação principal">
+            <a class="brand" href="index.html">JFK</a>
+            <div class="site-links">
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="cadastro.html">Cadastro</a>
+                <a href="pagamento.html">Pagamento</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="checkout-shell">
+        <section class="checkout-hero">
+            <p class="eyebrow">Etapa 2 de 3</p>
+            <h1>Informação de Pagamento</h1>
+            <p>Preencha os dados abaixo para simular a confirmação da sua reserva. A tela foi desenhada para parecer uma compra completa, mesmo sem integração com backend.</p>
+        </section>
+
+        <section class="checkout-grid">
+            <form class="checkout-card" action="finalizacao.html" method="get">
+                <h2>Dados do pagamento</h2>
+                <div class="checkout-form-grid">
+                    <label class="checkout-field" for="titular">
+                        <span>Titular do cartão</span>
+                        <input id="titular" name="titular" type="text" placeholder="Nome como está no cartão" required>
+                    </label>
+                    <label class="checkout-field" for="numero-cartao">
+                        <span>Número do cartão</span>
+                        <input id="numero-cartao" name="numero-cartao" type="text" inputmode="numeric" placeholder="0000 0000 0000 0000" required>
+                    </label>
+                    <label class="checkout-field" for="validade">
+                        <span>Validade</span>
+                        <input id="validade" name="validade" type="text" placeholder="MM/AA" required>
+                    </label>
+                    <label class="checkout-field" for="cvv">
+                        <span>CVV</span>
+                        <input id="cvv" name="cvv" type="password" inputmode="numeric" placeholder="123" required>
+                    </label>
+                    <label class="checkout-field checkout-field-full" for="cpf">
+                        <span>CPF para faturamento</span>
+                        <input id="cpf" name="cpf" type="text" placeholder="000.000.000-00" required>
+                    </label>
+                    <label class="checkout-field checkout-field-full" for="parcelamento">
+                        <span>Parcelamento</span>
+                        <select id="parcelamento" name="parcelamento" required>
+                            <option value="1x">1x sem juros</option>
+                            <option value="3x">3x sem juros</option>
+                            <option value="6x">6x com acréscimo</option>
+                        </select>
+                    </label>
+                </div>
+                <div class="checkout-actions">
+                    <a class="btn-secondary" href="cadastro.html">Voltar ao cadastro</a>
+                    <button type="submit" class="btn-primary">Finalizar</button>
+                </div>
+            </form>
+
+            <aside class="summary-card" aria-label="Resumo da reserva">
+                <h2>Resumo da reserva</h2>
+                <div class="summary-item">
+                    <span>Destino sugerido</span>
+                    <strong>Pacote internacional escolhido</strong>
+                </div>
+                <div class="summary-item">
+                    <span>Inclui</span>
+                    <strong>Passagem, hospedagem e passeios</strong>
+                </div>
+                <div class="summary-item">
+                    <span>Status</span>
+                    <strong>Pronto para confirmação</strong>
+                </div>
+                <p class="summary-note">Ao clicar em finalizar, você será enviado para a tela de conclusão da compra.</p>
+            </aside>
+        </section>
+    </main>
+</body>
+</html>

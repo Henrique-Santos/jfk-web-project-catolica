@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JFK | Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body travel-body">
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Navegação principal">
+            <a class="brand" href="index.html">JFK</a>
+            <div class="site-links">
+                <a href="index.html">Home</a>
+                <a href="login.html">Login</a>
+                <a href="pagamento.html">Pagamento</a>
+            </div>
+        </nav>
+    </header>
+    <main class="auth-shell">
+        <section class="auth-card" aria-labelledby="cadastro-titulo">
+            <div class="auth-hero">
+                <h1>JFK</h1>
+                <p>Crie sua conta para seguir até a informação de pagamento com seus dados já organizados no fluxo de compra.</p>
+            </div>
+            <div class="auth-form-area">
+                <h2 id="cadastro-titulo" class="auth-title">Cadastro de usuario</h2>
+                <form class="auth-form" action="pagamento.html" method="get">
+                    <div class="auth-field">
+                        <label for="cadastro-nome">Nome completo</label>
+                        <input id="cadastro-nome" name="nome" type="text" autocomplete="name" required>
+                    </div>
+                    <div class="auth-field">
+                        <label for="cadastro-email">E-mail</label>
+                        <input id="cadastro-email" name="email" type="email" autocomplete="email" required>
+                    </div>
+                    <div class="auth-field">
+                        <label for="cadastro-nascimento">Data de nascimento</label>
+                        <input id="cadastro-nascimento" name="nascimento" type="date" required>
+                    </div>
+                    <div class="auth-field">
+                        <label for="cadastro-estado">Estado</label>
+                        <input id="cadastro-estado" name="estado" type="text" autocomplete="address-level1" required>
+                    </div>
+                    <div class="auth-field">
+                        <label for="cadastro-endereco">Endereco</label>
+                        <input id="cadastro-endereco" name="endereco" type="text" autocomplete="street-address" required>
+                    </div>
+                    <div class="auth-field">
+                        <label for="cadastro-sexo">Sexo</label>
+                        <select id="cadastro-sexo" name="sexo" required>
+                            <option value="" selected disabled>Selecione</option>
+                            <option value="feminino">Feminino</option>
+                            <option value="masculino">Masculino</option>
+                            <option value="outro">Outro</option>
+                            <option value="nao-informar">Prefiro nao informar</option>
+                        </select>
+                    </div>
+                    <div class="auth-field">
+                        <label for="cadastro-categorias">Categorias de interesse</label>
+                        <select id="cadastro-categorias" name="categorias" multiple required>
+                            <option value="praia">Praia</option>
+                            <option value="campo">Campo</option>
+                            <option value="nacionais">Nacionais</option>
+                            <option value="internacionais">Internacionais</option>
+                            <option value="serra">Serra</option>
+                            <option value="cidade">Cidade</option>
+                        </select>
+                        <p class="auth-help">Use Ctrl (Windows) ou Command (Mac) para selecionar mais de uma opcao.</p>
+                    </div>
+                    <div class="auth-field">
+                        <label for="cadastro-login">Login</label>
+                        <input id="cadastro-login" name="login" type="text" autocomplete="username" required>
+                    </div>
+                    <div class="auth-field">
+                        <label for="cadastro-senha">Senha</label>
+                        <input id="cadastro-senha" name="senha" type="password" autocomplete="new-password" required>
+                    </div>
+                    <div class="auth-actions">
+                        <button type="submit" class="btn-primary">Salvar e continuar</button>
+                        <a class="btn-secondary" href="login.html" role="button">Ja tenho conta</a>
+                    </div>
+                </form>
+                <a class="auth-back" href="index.html">Voltar para pacotes</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
