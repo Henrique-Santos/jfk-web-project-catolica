@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JFK | Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="auth-body travel-body">
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Navegação principal">
+            <a class="brand" href="index.html">JFK</a>
+            <div class="site-links">
+                <a href="index.html">Home</a>
+                <a href="cadastro.html">Cadastro</a>
+                <a href="pagamento.html">Pagamento</a>
+            </div>
+        </nav>
+    </header>
+    <main class="auth-shell">
+        <section class="auth-card" aria-labelledby="login-titulo">
+            <div class="auth-hero">
+                <h1>JFK</h1>
+                <p>Entre para seguir direto para a etapa de pagamento ou crie uma conta para salvar seus dados antes de concluir a compra.</p>
+            </div>
+            <div class="auth-form-area">
+                <h2 id="login-titulo" class="auth-title">Acesse sua conta</h2>
+                <form class="auth-form" action="pagamento.html" method="get">
+                    <div class="auth-field">
+                        <label for="login-usuario">Login</label>
+                        <input id="login-usuario" name="login" type="text" autocomplete="username" required>
+                    </div>
+                    <div class="auth-field">
+                        <label for="login-senha">Senha</label>
+                        <input id="login-senha" name="senha" type="password" autocomplete="current-password" required>
+                    </div>
+                    <div class="auth-actions">
+                        <button type="submit" class="btn-primary">Entrar</button>
+                        <a class="btn-secondary" href="cadastro.html" role="button">Criar conta</a>
+                    </div>
+                </form>
+                <a class="auth-back" href="index.html">Voltar para pacotes</a>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

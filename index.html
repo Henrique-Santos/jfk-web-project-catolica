@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JFK | Pacotes de Viagem</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="travel-body">
+    <header class="site-header">
+        <nav class="site-nav" aria-label="Navegação principal">
+            <a class="brand" href="index.html">JFK</a>
+            <div class="site-links">
+                <a href="#pacotes">Pacotes</a>
+                <a href="login.html">Login</a>
+                <a href="cadastro.html">Cadastro</a>
+                <a href="pagamento.html">Pagamento</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="travel-main">
+        <section class="hero-banner" aria-label="Destaques da semana">
+            <div class="hero-copy">
+                <p class="eyebrow">Sua próxima viagem começa aqui</p>
+                <h1>Pacotes com destino, preço e rota clara do início ao fim.</h1>
+                <p>Escolha entre quatro destinos com páginas próprias, detalhes reais e um fluxo de compra que leva da vitrine até a confirmação final.</p>
+                <div class="hero-actions">
+                    <a class="btn-primary" href="#pacotes">Ver pacotes</a>
+                    <a class="btn-secondary" href="login.html">Entrar na compra</a>
+                </div>
+            </div>
+
+            <div class="hero-visual">
+                <div class="banner-shell">
+                    <button id="banner-prev" class="banner-control" type="button" aria-label="Slide anterior">&#10094;</button>
+                    <figure class="banner-frame">
+                        <img id="banner-image" src="img/photo-paris.avif" alt="Destinos em destaque" />
+                        <figcaption class="banner-copy">
+                            <h2 id="banner-title">Paris com charme clássico</h2>
+                            <p id="banner-text">7 dias com gastronomia, museus e a atmosfera da cidade luz.</p>
+                        </figcaption>
+                    </figure>
+                    <button id="banner-next" class="banner-control" type="button" aria-label="Próximo slide">&#10095;</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="pacotes">
+            <div class="section-heading">
+                <p class="eyebrow">Pacotes disponíveis</p>
+                <h2>Quatro destinos, quatro páginas, quatro experiências diferentes.</h2>
+                <p>Os cards abaixo levam para páginas exclusivas com fotos, descrição do roteiro e botão de compra que inicia a navegação pelo login, cadastro e pagamento.</p>
+            </div>
+
+            <section class="packages-grid" aria-label="Lista de pacotes">
+                <a class="package-card" href="pacote-paris.html">
+                    <figure class="package-thumb">
+                        <img src="img/photo-paris.avif" alt="Pacote turístico Paris" />
+                    </figure>
+                    <div class="package-content">
+                        <p class="eyebrow">França</p>
+                        <h3>Paris</h3>
+                        <p>Uma viagem elegante entre museus, cafés e a vista da Torre Eiffel.</p>
+                        <span class="package-price">A partir de R$ 6.500,00</span>
+                        <span class="package-link">Ver detalhes</span>
+                    </div>
+                </a>
+
+                <a class="package-card" href="pacote-toquio.html">
+                    <figure class="package-thumb">
+                        <img src="img/photo-tokio.avif" alt="Pacote turístico Tóquio" />
+                    </figure>
+                    <div class="package-content">
+                        <p class="eyebrow">Japão</p>
+                        <h3>Tóquio</h3>
+                        <p>Templos, tecnologia, comida de rua e um bate-volta até o Monte Fuji.</p>
+                        <span class="package-price">A partir de R$ 9.800,00</span>
+                        <span class="package-link">Ver detalhes</span>
+                    </div>
+                </a>
+
+                <a class="package-card" href="pacote-nova-york.html">
+                    <figure class="package-thumb">
+                        <img src="img/photo-newyork.avif" alt="Pacote turístico Nova York" />
+                    </figure>
+                    <div class="package-content">
+                        <p class="eyebrow">Estados Unidos</p>
+                        <h3>Nova York</h3>
+                        <p>Manhattan, Broadway, mirantes e a energia urbana da cidade que nunca dorme.</p>
+                        <span class="package-price">A partir de R$ 7.200,00</span>
+                        <span class="package-link">Ver detalhes</span>
+                    </div>
+                </a>
+
+                <a class="package-card" href="pacote-gramado.html">
+                    <figure class="package-thumb">
+                        <img src="https://images.unsplash.com/photo-1519046904884-53103b34b206?auto=format&fit=crop&w=1200&q=80" alt="Pacote turístico Gramado" />
+                    </figure>
+                    <div class="package-content">
+                        <p class="eyebrow">Serra Gaúcha</p>
+                        <h3>Gramado</h3>
+                        <p>Clima acolhedor, boa gastronomia e paisagens com cara de viagem romântica.</p>
+                        <span class="package-price">A partir de R$ 3.990,00</span>
+                        <span class="package-link">Ver detalhes</span>
+                    </div>
+                </a>
+            </section>
+        </section>
+    </main>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
